@@ -20,13 +20,14 @@ Don't worry about capital letters.
 std::string tweakLetters(std::string s, std::vector<int> arr) {
 	   std::string tweakLetters;
 	   for(int i=0;i<s.length();i++){
+		         //if s[i] is 'z' and arr[i] value is 1 then we change the letter 'z' to 'a' 
 			 if(s[i]=='z'&&arr[i]==1){
 				 tweakLetters+='a';
 			 }
 			 else if(s[i]=='a' && arr[i]==-1){
-				 tweakLetters+='z';
+				 tweakLetters+='z';////if s[i] is 'a' and arr[i] value is -1 then we change the letter 'a' to 'z' 
 			 }
 			 else tweakLetters+=(s[i]+arr[i]);
 		 }
-	return tweakLetters;
+	return tweakLetters;//return the tweakLetter string
 }
