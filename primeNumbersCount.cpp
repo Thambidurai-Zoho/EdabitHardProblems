@@ -17,17 +17,17 @@ N/A
 int primeNumbers(int num) {
 	 int primeCount=0;
 	  for(int i = 2; i <= num; i++){
-			  int flag=1;
-			  for(int j=2; j < i;j++){
-					 if(i%j==0){//if a number(i) divisble by number(j) its not a prime number we change the flag value into zero.
-						  flag=0;
-						  break;
-					 }
-				}
-      //if the flag value is one after the all iterations its a prime number. 
-			if(flag==1){
-				 primeCount++;
-			}
+		  int flag=1;
+		  for(int j=2; j < i;j++){
+			if(i%j==0){//if a number(i) divisble by number(j) its not a prime number we change the flag value into zero.
+			   flag=0;
+			    break;
+			 }
 		}
+               //if the flag value is one after the all iterations its a prime number. 
+		if(flag==1){
+	           primeCount++;
+		}
+	}
 	return primeCount;
 }
