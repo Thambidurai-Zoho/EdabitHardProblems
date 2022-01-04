@@ -14,17 +14,12 @@ N/A
 
 */
 
-
-
-
-
-
 bool cons(std::vector<int> arr) {
-	   sort(arr.begin(),arr.end());
+	   sort(arr.begin(),arr.end());//sort the vector
 	   for(int i = 0 ; i < arr.size() - 1 ; i++){
-			    if(arr[i] + 1 != arr[i+1]){
-						 return false;
-					}    
-		 }
-	  return true;
+	        if(arr[i] + 1 != arr[i+1]){//check the consecutive numbers using this condition.if this condition fails return false.
+		    return false;
+		}    
+	  }
+	  return true;// if vector has a consecutive numbers finally we return true.
 }
