@@ -28,16 +28,16 @@ Return true if the cycle length is greater than the array length.
 
 bool isRepeatingCycle(std::vector<int> arr, int length) {
 	  //Return true if the cycle length is greater than or equal to the array length.
-    if(arr.size()  <= length ){
-			  return true;
-		}
+          if(arr.size()  <= length ){
+		return true;
+	  }
 	
 	  int index=0;
 	  for(int i = length ; i < arr.size(); i++){
 			  if(!(arr[i] == arr[index++])){//we check its cyclic or not using this condition.
-					 return false;
-				}
-		}
+				 return false;
+			  }
+	 }
 	
 	  return true;//if the vector is cyclic we return true.
 }
