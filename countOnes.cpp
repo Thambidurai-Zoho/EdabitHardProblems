@@ -19,13 +19,13 @@ Each input will contain only zeroes and ones.
 int countOnes(std::vector<int> arr) {
 	   int countOnes=0,flag=1; 
 	   for(int i = 0; i < arr.size(); i++){
-			  if(arr[i]==1 && arr[i+1]==1){//if continuously two 1s is coming we increase the countOnes count. 
-					  if(flag == 1){
-							 countOnes++;
-						}
-					 flag=0;//we change the flag value equal to zero. beacause , sometimes ones contionuously occured so that time we dont increase the countOnes count.
-				}
-			  else flag=1;
+	        if(arr[i]==1 && arr[i+1]==1){//if continuously two 1s is coming we increase the countOnes count. 
+		   if(flag == 1){
+			 countOnes++;
+		   }
+		   flag=0;//we change the flag value equal to zero. beacause , sometimes ones contionuously occured so that time we dont increase the countOnes count.
+		}
+        	else flag=1;
 		 }
 	return countOnes;// return the ones count.
 }
