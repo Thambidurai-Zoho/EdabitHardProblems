@@ -24,9 +24,9 @@ std::string toSnakeCase(std::string str) {
 	std::string snakeCase;
 	  for(int i=0;i<str.length();i++){
 			   if(str[i]>=65 && str[i]<=90){//if the letter is capital entered into the if loop conditin
-					   snakeCase+='_';//adding '_' 
-					   snakeCase+=str[i]+32;//convert capital to small after adding the small letter into the snakeCase string 
-				 }
+				   snakeCase+='_';//adding '_' 
+				   snakeCase+=str[i]+32;//convert capital to small after adding the small letter into the snakeCase string 
+			   }
 			   else snakeCase+=str[i];
 		}
 	return snakeCase;
@@ -37,9 +37,9 @@ std::string toCamelCase(std::string str) {
 	  std::string camelCase;
 	  for(int i=0;i<str.length();i++){
 			  if(str[i]=='_'){
-					i++;
-					camelCase+=(str[i]-32);//convert small to capital and adding the capital letter into the camelCase string 
-				}
+				i++;
+				camelCase+=(str[i]-32);//convert small to capital and adding the capital letter into the camelCase string 
+			}
 			 else camelCase+=str[i];//adding the string letters into the camelCase string 
 		}
 	  return camelCase;
