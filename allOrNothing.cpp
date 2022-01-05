@@ -42,8 +42,8 @@ Test has at least one question.
 bool possiblyPerfect(std::vector<char> key, std::vector<char> answers) {
 	int rightCount=0,wrongCount=0;   
 	for(int i = 0; i < key.size();i++){
-         //if key is an underscore we increase the rightCount and WrongCount variable
-			   if(key[i]=='_'){
+                //if key is an underscore we increase the rightCount and WrongCount variable
+		    if(key[i]=='_'){
 					 rightCount++;
 					 wrongCount++;
 				 } 
@@ -56,7 +56,7 @@ bool possiblyPerfect(std::vector<char> key, std::vector<char> answers) {
 		    else{}
 		     
 		 }
-     //if all are right answers or all are wrong answers we return true. 
+           //if all are right answers or all are wrong answers we return true. 
 	   if(rightCount == answers.size()|| wrongCount == answers.size()){
 		 return true;
 	}
